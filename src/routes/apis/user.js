@@ -65,8 +65,6 @@ const getOneUser = async (request, response) => {
             "level_id": pointInfo.rows[0].level_id
         });
         serviceCount += 1;
-        console.log("service count: ", serviceCount);
-        console.log("list", userPointList);
     }
     response.status(200).send({ 
         message: 'success', 
